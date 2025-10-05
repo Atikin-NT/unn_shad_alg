@@ -1,6 +1,12 @@
 #include <iostream>
 #include <vector>
 
+struct PathInfo {
+    int length;        // Длина пути, заканчивающегося этим элементом
+    int prev_index;    // Индекс предыдущего элемента в пути
+    bool is_up;        // Направление последнего перехода
+};
+
 struct TreeNode {
     int value;
     bool is_up;
